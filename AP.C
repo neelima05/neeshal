@@ -7,9 +7,9 @@ scanf("%d%d",&a,&d);
 val=a;
 for(i=0;i<n;i++)
 {
-printf("%d",&a);
-sum=sum+a;
-a=a+d;
+printf("%d",&val);
+sum=sum+val;
+val=val+d;
 }
-printf("\n sum of the AP series till %d terms is %d\n":terms,sum);
+printf("%d",sum);
 }
