@@ -1,12 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
 void main()
 {
-	int h,m,h1,m1,t,t2;
-	printf("enter the first time");
-	scanf("%d %d",&h,&m);
-	printf("enter the second time");
-	scanf("%d %d",&h1,&m1);
-	t=h-h1;
-	t2=m-m1;
-	printf("%d %d",t,t2);
+long int n,i,j,t;
+printf("enter the number");
+scanf("%ld",&n);
+long int a[n];
+for(i=0;i<n;i++)
+{
+scanf("%ld ",&a[i]);
+}
+for(i=0;i<n;i++)
+{
+for(j=i+1;j<n;j++)
+{
+ if(a[i]>a[j])
+{
+ t=a[i];
+a[i]=a[j];
+a[j]=t;
+}
+}
+}
+for(i=0;i<n;i++)
+printf("%ld ",a[i]);
+
 }
